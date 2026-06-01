@@ -8,7 +8,7 @@ export default function NavBar() {
             <div className="container-fluid ">
                 <div className="container py-3">
                     <div className="row d-flex justify-content-between px-5">
-                        <div className="col-2 d-flex align-item-center"> <p className={`fw-bold mb-0 align-slef-center ${style.fontsHekto} `}>Hekto</p></div>
+                        <div className="col-2 d-flex align-item-center"> <p className={`fw-bold mb-0 align-slef-center ${style.fontsHekto} `}>Elite </p></div>
 
 
                         <div className="col-10">

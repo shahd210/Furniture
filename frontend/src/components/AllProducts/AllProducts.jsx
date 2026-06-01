@@ -24,6 +24,7 @@ export default function AllProducts() {
 
     if (loading) return <div className="text-center p-5 mt-5"><h3>Loading All Products...</h3></div>;
 
+console.log(products[0]);
     return (
         <>
             <Topper title={"Shop Grid Default"} breadcrumb={"Products"} />
@@ -45,7 +46,7 @@ export default function AllProducts() {
                                 <div className="bg-light rounded p-3 mb-3" style={{ height: '220px' }}>
                                     <Link to={`/product/${product._id}`}>
                                         <img
-                                            src={`http://localhost:5000/${product.image?.replace('\\', '/')}`}
+                                           src={`http://localhost:5000/${product.image.replace(/\\/g, "/")}`}
                                             className="img-fluid h-100"
                                             style={{ objectFit: 'contain' }}
                                             alt={product.name}
